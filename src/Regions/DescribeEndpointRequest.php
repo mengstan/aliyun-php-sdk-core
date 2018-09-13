@@ -15,7 +15,7 @@ namespace mengstan\aliyunCore\Regions;
 //define("LOCATION_SERVICE_REGION", "cn-hangzhou");
 //define("CACHE_EXPIRE_TIME", 3600);
 
-use Sts\Core\RpcAcsRequest;
+use mengstan\aliyunCore\RpcAcsRequest;
 
 class DescribeEndpointRequest extends RpcAcsRequest
 {

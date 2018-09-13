@@ -23,6 +23,12 @@ define("AUTH_TYPE_RAM_AK", "RAM_AK");
 define("AUTH_TYPE_RAM_ROLE_ARN", "RAM_ROLE_ARN");
 define("AUTH_TYPE_ECS_RAM_ROLE", "ECS_RAM_ROLE");
 
+use mengstan\aliyunCore\Auth\Credential;
+use mengstan\aliyunCore\Auth\RamRoleArnCredential;
+use mengstan\aliyunCore\Auth\EcsRamRoleCredential;
+use mengstan\aliyunCore\Auth\ShaHmac1Signer;
+use mengstan\aliyunCore\Regions\Endpoint;
+
 class DefaultProfile implements IClientProfile
 {
 	private static $profile;

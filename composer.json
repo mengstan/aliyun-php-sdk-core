@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mengstan\\aliyuncore\\": "src"
+            "mengstan\\aliyunCore\\": "src"
         }
     },
     "extra": {

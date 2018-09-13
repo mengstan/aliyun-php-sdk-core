@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace mengstan\aliyunCore\Auth;
+namespace mengstan\aliyunCore\Exception;
 
 class ServerException extends ClientException
 {

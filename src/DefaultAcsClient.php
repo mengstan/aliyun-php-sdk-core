@@ -19,6 +19,12 @@
  */
 namespace mengstan\aliyunCore;
 
+use mengstan\aliyunCore\Regions\LocationService;
+use mengstan\aliyunCore\Auth\RamRoleArnService;
+use mengstan\aliyunCore\Auth\EcsRamRoleService;
+use mengstan\aliyunCore\Exception\ClientException;
+use mengstan\aliyunCore\Regions\EndpointProvider;
+
 class DefaultAcsClient implements IAcsClient
 {
     public $iClientProfile;
@@ -50,6 +56,15 @@ class DefaultAcsClient implements IAcsClient
         return $respObject;
     }
 
+    /**
+     * @param $request
+     * @param null $iSigner
+     * @param null $credential
+     * @param bool $autoRetry
+     * @param int $maxRetryNumber
+     * @return mixed
+     * @throws ClientException
+     */
     private function doActionImpl($request, $iSigner = null, $credential = null, $autoRetry = true, $maxRetryNumber = 3)
     {
         if (null == $this->iClientProfile && (null == $iSigner || null == $credential

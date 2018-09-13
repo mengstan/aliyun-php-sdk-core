@@ -17,9 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace mengstan\aliyunCore\Auth;
+namespace mengstan\aliyunCore\Exception;
 
-class ClientException extends Exception
+class ClientException extends \Exception
 {
     public function __construct($errorMessage, $errorCode)
     {
