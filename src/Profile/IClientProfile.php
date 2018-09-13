@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace mengstan\aliyuncore\Profile;
+namespace mengstan\aliyunCore\Profile;
 
 interface IClientProfile
 {

@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace mengstan\aliyuncore\Auth;
+namespace mengstan\aliyunCore\Auth;
 
 interface ISigner
 {

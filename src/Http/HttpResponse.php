@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace mengstan\aliyuncore\Http;
+namespace mengstan\aliyunCore\Http;
 
 class HttpResponse
 {

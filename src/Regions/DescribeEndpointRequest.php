@@ -6,7 +6,7 @@
  * Time: 15:45
  */
 
-namespace mengstan\aliyuncore\Regions;
+namespace mengstan\aliyunCore\Regions;
 
 //define("LOCATION_SERVICE_PRODUCT_NAME", "Location");
 //define("LOCATION_SERVICE_DOMAIN", "location.aliyuncs.com");

@@ -17,7 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace mengstan\aliyuncore\Profile;
+namespace mengstan\aliyunCore\Profile;
+
 define("AUTH_TYPE_RAM_AK", "RAM_AK");
 define("AUTH_TYPE_RAM_ROLE_ARN", "RAM_ROLE_ARN");
 define("AUTH_TYPE_ECS_RAM_ROLE", "ECS_RAM_ROLE");
