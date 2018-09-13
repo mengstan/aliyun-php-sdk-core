@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace mengstan\aliyuncore\Auth;
+
 class Credential extends AbstractCredential
 {
     private $dateTimeFormat = 'Y-m-d\TH:i:s\Z';

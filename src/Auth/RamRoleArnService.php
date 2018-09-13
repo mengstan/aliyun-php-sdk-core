@@ -17,6 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace mengstan\aliyuncore\Auth;
 
 define("STS_PRODUCT_NAME", "Sts");
 define("STS_DOMAIN", "sts.aliyuncs.com");

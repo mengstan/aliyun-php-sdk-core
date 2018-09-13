@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace mengstan\aliyuncore\Auth;
+
 abstract class AbstractCredential
 {
     abstract public function getAccessKeyId();

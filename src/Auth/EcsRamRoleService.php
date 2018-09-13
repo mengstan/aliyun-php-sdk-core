@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace mengstan\aliyuncore\Auth;
+
 
 define("ECS_ROLE_EXPIRE_TIME", 3600);
 

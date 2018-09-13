@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace mengstan\aliyuncore;
+
 abstract class AcsRequest
 {
 	protected  $version;

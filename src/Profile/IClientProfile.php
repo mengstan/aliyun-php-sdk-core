@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace mengstan\aliyuncore\Profile;
+
 interface IClientProfile
 {
     public function getSigner();
