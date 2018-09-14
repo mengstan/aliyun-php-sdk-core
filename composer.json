@@ -1,6 +1,6 @@
 {
-    "name": "mengstan/aliyun-php-core",
-    "description": "aliyun-php-sdk-core",
+    "name": "mengstan/aliyun-core",
+    "description": "aliyun-sdk-core",
     "keywords": ["aliyun", "core"],
     "homepage": "https://github.com/mengstan/aliyun-php-sdk-core",
     "license": "MIT",
