@@ -28,6 +28,7 @@ use mengstan\aliyunCore\Auth\RamRoleArnCredential;
 use mengstan\aliyunCore\Auth\EcsRamRoleCredential;
 use mengstan\aliyunCore\Auth\ShaHmac1Signer;
 use mengstan\aliyunCore\Regions\Endpoint;
+use mengstan\aliyunCore\Regions\EndpointConfig;
 
 class DefaultProfile implements IClientProfile
 {
@@ -46,6 +47,8 @@ class DefaultProfile implements IClientProfile
 	    self::$regionId = $regionId;
 	    self::$credential = $credential;
 	    self::$authType = $authType;
+	    EndpointConfig::loadConfig();
+
 	}
 	
 	public static function getProfile($regionId, $accessKeyId, $accessSecret, $securityToken = null)

@@ -24,6 +24,8 @@ use mengstan\aliyunCore\Auth\RamRoleArnService;
 use mengstan\aliyunCore\Auth\EcsRamRoleService;
 use mengstan\aliyunCore\Exception\ClientException;
 use mengstan\aliyunCore\Regions\EndpointProvider;
+use mengstan\aliyunCore\Http\HttpHelper;
+use mengstan\aliyunCore\Exception\ServerException;
 
 class DefaultAcsClient implements IAcsClient
 {
@@ -98,6 +100,7 @@ class DefaultAcsClient implements IAcsClient
         if ($domain == null)
         {
             $domain = EndpointProvider::findProductDomain($request->getRegionId(), $request->getProduct());
+//            var_dump($request->getRegionId(), $request->getProduct());exit;
         }
 
         if (null == $domain) {
@@ -154,9 +157,15 @@ class DefaultAcsClient implements IAcsClient
     {
         throw new ServerException($respObject->Message, $respObject->Code, $httpStatus, $respObject->RequestId);
     }
-    
+
+    /**
+     * @param $body
+     * @param $format
+     * @return mixed|\SimpleXMLElement
+     */
     private function parseAcsResponse($body, $format)
     {
+        $respObject = null;
         if ("JSON" == $format) {
             $respObject = json_decode($body);
         } elseif ("XML" == $format) {

@@ -19,6 +19,8 @@
  */
 namespace mengstan\aliyunCore\Regions;
 
+use mengstan\aliyunCore\Http\HttpHelper;
+
 class LocationService
 {
 
